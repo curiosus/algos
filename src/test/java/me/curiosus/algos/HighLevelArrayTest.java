@@ -27,7 +27,8 @@ public class HighLevelArrayTest {
         highLevelArray.insert("AAA");
         highLevelArray.insert("BBB");
 		highLevelArray.insert("ABC");
-        assertEquals(3, highLevelArray.size());
+		highLevelArray.insert("ZZZ");
+        assertEquals(4, highLevelArray.size());
         assertEquals("BBB", highLevelArray.find("BBB"));
     }
 
