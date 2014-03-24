@@ -29,12 +29,18 @@ public class HighLevelArrayTest {
         highLevelArray.insert("ABC");
         highLevelArray.insert("ZZZ");
         assertEquals(4, highLevelArray.size());
-        assertEquals("BBB", highLevelArray.find("BBB"));
     }
 
     @Test
     public void find() {
-
+        highLevelArray.insert("AAA");
+        highLevelArray.insert("BBB");
+        highLevelArray.insert("ABC");
+        highLevelArray.insert("ZZZ");
+        Object obj = highLevelArray.find("ABC");
+        assertNotNull(obj);
+        String s = (String) obj;
+        assertEquals("ABC", s);
     }
 
     @Test
